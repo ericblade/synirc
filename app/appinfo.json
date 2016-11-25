@@ -1,0 +1,10 @@
+{
+	"id": "com.ericblade.synirc",
+	"version": "1.0.0",
+	"vendor": "Eric Blade",
+	"type": "web",
+	"main": "index.html",
+	"title": "Synergy IRC",
+	"icon": "images/synirc-64.png",
+	"uiRevision":2
+}

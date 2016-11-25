@@ -1,0 +1,12 @@
+{
+    "id": "com.ericblade.synirc.imgroupchat:1",
+    "owner": "com.ericblade.synirc.service",
+    "sync": false,
+    "extends": [ "com.palm.imgroupchat:1" ],
+    "indexes": [
+        {
+            "name": "bygroupname",
+            "props": [ { "name": "groupName" }]
+        }
+    ]
+}

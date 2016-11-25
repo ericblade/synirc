@@ -1,0 +1,43 @@
+{
+    "templateId"            : "com.ericblade.synirc.account",
+    "loc_name"              : "Internet Relay Chat",
+    "hidden"                : false,
+    "invisible"             : false,
+    "icon"                  : { "loc_32x32": "images/synirc-32.png", "loc_48x48": "images/synirc-48.png", "splitter": "images/synirc-32.png" },
+    "readPermissions"       : [ "com.ericblade.synirc", "com.palm.app.messaging" ],
+    "writePermissions"      : [ "com.ericblade.synirc", "com.palm.app.messaging", ],
+    "validator"		    : "palm://com.ericblade.synirc.service/checkCredentials",
+    "capabilityProviders"   : [
+                                { "id":"com.ericblade.synirc.account.im",
+                                  "alwaysOn": false,
+                                  "sync": "palm://com.ericblade.synirc.service/sync",
+                                  "loc_name": "Internet Relay Chat",
+                                  "loc_shortName": "IRC",
+                                  "capability":"MESSAGING",
+                                  "capabilitySubtype": "IM",
+                                  "serviceName":"type_synirc",
+                                  "supportsInvisibleStatus": false,
+                                  "implementation": "palm://com.ericblade.synirc.service/",
+								  "onCreate": "palm://com.ericblade.synirc.service/onCreate",
+                                  "onEnabled": "palm://com.ericblade.synirc.service/onEnabled",
+								  "onDelete": "palm://com.ericblade.synirc.service/onDelete",
+                                  "onCredentialsChanged": "palm://com.ericblade.synirc.service/onCredentialsChanged",
+                                  "onCapabilitiesChanged": "palm://com.ericblade.synirc.service/onCapabilitiesChanged",
+                                  "loginStateChanged": "palm://com.ericblade.synirc.service/loginStateChanged",
+                                  "sendIM": "palm://com.ericblade.synirc.service/sendIM",
+                                  "sendCommand": "palm://com.ericblade.synirc.service/sendCommand",
+                                  "chatWithNonBuddies": true,
+                                  "readOnlyData": false,
+                                  "icon": { "loc_32x32": "images/synirc-32.png", "loc_48x48": "images/syn-irc48.png", "splitter": "images/synirc-32.png" },
+								  "groupChat": {
+									"supported": true,
+									"topicsSupported": true
+								  },
+                                  "dbkinds": {
+                                    "immessage": "com.ericblade.synirc.immessage:1",
+                                    "imloginstate": "com.ericblade.synirc.loginstate:1",
+                                    "imcommand": "com.ericblade.synirc.imcommand:1"
+                                  }
+                                }
+                               ]
+}

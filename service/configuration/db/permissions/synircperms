@@ -1,0 +1,46 @@
+[
+    {
+        "type": "db.kind",
+		"object": "com.ericblade.synirc.immessage:1",
+		"caller": "com.ericblade.*",
+		"operations": {
+			"read": "allow", 
+			"create": "allow",
+			"delete": "allow",
+			"update": "allow"
+		}
+	},
+    {
+		"type": "db.kind",
+		"object": "com.ericblade.synirc.immessage:1",
+		"caller": "com.palm.*",
+		"operations": {
+			"read": "allow",
+			"create": "allow",
+			"delete": "allow",
+			"update": "allow",
+        }
+    },
+	{
+        "type": "db.kind",
+		"object": "com.ericblade.synirc.imgroupchat:1",
+		"caller": "com.ericblade.*",
+		"operations": {
+			"read": "allow",
+			"create": "allow",
+			"delete": "allow",
+			"update": "allow"
+		}
+	},
+	{
+        "type": "db.kind",
+		"object": "com.ericblade.synirc.imgroupchat:1",
+		"caller": "com.palm.*",
+		"operations": {
+			"read": "allow",
+			"create": "allow",
+			"delete": "allow",
+			"update": "allow"
+		}
+	}
+]

@@ -1,0 +1,11 @@
+{
+    "id": "com.ericblade.synirc",
+    "package_format_version": 2,
+    "loc_name": "SynIRC",
+    "version": "1.0.0",
+    "vendor": "Eric Blade",
+    "vendorurl": "http://www.ericbla.de/gvoice-webos/",
+    "app": "com.ericblade.synirc",
+    "services": [ "com.ericblade.synirc.service" ],
+    "accounts": [ "com.ericblade.synirc.account" ]
+}
