@@ -4,8 +4,8 @@
     "hidden"                : false,
     "invisible"             : false,
     "icon"                  : { "loc_32x32": "images/synirc-32.png", "loc_48x48": "images/synirc-48.png", "splitter": "images/synirc-32.png" },
-    "readPermissions"       : [ "com.ericblade.synirc", "com.palm.app.messaging" ],
-    "writePermissions"      : [ "com.ericblade.synirc", "com.palm.app.messaging", ],
+    "readPermissions"       : [ "com.ericblade.synirc", "com.palm.app.messaging", "org.webosports.app.messaging"],
+    "writePermissions"      : [ "com.ericblade.synirc", "com.palm.app.messaging", "org.webosports.app.messaging"],
     "validator"		    : "palm://com.ericblade.synirc.service/checkCredentials",
     "capabilityProviders"   : [
                                 { "id":"com.ericblade.synirc.account.im",
