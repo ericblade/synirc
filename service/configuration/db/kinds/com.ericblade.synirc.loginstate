@@ -6,7 +6,7 @@
         {
             "name": "byAccountId",
             "props": [
-                { "name": "accountId" },
+                { "name": "accountId" }
             ]
         }
     ],
