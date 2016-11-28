@@ -9,7 +9,6 @@ var PalmCall = Foundations.Comms.PalmCall;
 var AjaxCall = Foundations.Comms.AjaxCall;
 var _ = IMPORTS.underscore._;
 var ContactsLib = IMPORTS.contacts;
-var Messaging = IMPORTS['messaging.library'].Messaging;
 var Class = Foundations.Class;
 var Activity = Foundations.Control.Activity;
 var mapReduce = Foundations.Control.mapReduce;
