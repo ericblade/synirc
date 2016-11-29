@@ -17,7 +17,7 @@ enyo.kind({
 		]},
 		{ content: "At the moment, this app must remain running to keep your link to IRC running."},
 		{ content: "Enter your server and user information, and press Start." },
-		{ content: "You will be able to send and receive IRC messages through the webOS messaging app." },
+		{ content: "You will be able to send and receive IRC messages through the Messaging app." },
 		{flex: 1, kind: "Pane", components: [
 			{flex: 1, kind: "Scroller", components: [
 				{ name: "StartButton", kind: "Button", caption: "Start!", onclick: "startService" },
@@ -44,7 +44,7 @@ enyo.kind({
 						{ kind: "Item", layoutKind: "HFlexLayout", components:
 							[
 								{ flex: 1, content: "Full Name" },
-								{ name: "RealName", kind: "Input", value: localStorage["realname"] || "webOS Synergy User" },
+								{ name: "RealName", kind: "Input", value: localStorage["realname"] || "Synergy User" },
 								{ kind: "Spacer" },
 							]
 						},
@@ -62,7 +62,7 @@ enyo.kind({
 								{ kind: "Spacer" },
 							]
 						},
-						{ content: "Enter multiple channels by seperating them with a comma, such as: #webos,#touchpad" }
+						{ content: "Enter multiple channels by seperating them with a comma, such as: #webos,#touchpad,#webos-ports" }
 					]
 				},
 				{ kind: "Group", caption: "Misc", components:
@@ -78,7 +78,7 @@ enyo.kind({
 						}
 					]
 				},
-				{ content: "If you have Preware installed, you may want to get the 'Disable Messaging beeps' patch for webOS 3.0.5, to cut down on the number of beeps that the Messaging app makes." },
+				{ content: "If you are running webOS, you may want to get the 'Disable Messaging beeps' patch for webOS 3.0.5 in Preware, to cut down on the number of beeps that the Messaging app makes." },
 				{ content: "If you are attempting to send a private message to someone, and Messaging warns that they are not logged in, tell it to send the message anyway." },
 			]}
 		]},
@@ -167,7 +167,7 @@ enyo.kind({
 		localStorage["synergyAccountId"] = undefined;
 	},
     groupChatsCleared: function(inSender, inResponse, inRequest) {
-		this.$.MessageContent.setContent("IRC Chats reset, please wait a few moments for webOS to re-thread the conversations");
+		this.$.MessageContent.setContent("IRC Chats reset, please wait a few moments for chatthreader to re-thread the conversations");
 		this.$.MessagePopup.openAtCenter();
 		this.log("inResponse=", inResponse);
 	},
